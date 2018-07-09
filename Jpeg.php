@@ -17,6 +17,7 @@ class Signia_ImageResize_Jpeg extends Signia_ImageResize_Abstract
             $this->resizeImage();
          }
          imagejpeg($this->destImage, $this->destImageName, 50);
+         
          return true;
       }		
 	}

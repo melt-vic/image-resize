@@ -1,6 +1,8 @@
 <?php
+
 class Signia_ImageResize_Png extends Signia_ImageResize_Abstract
 {
+
    function getResizedImage()
    {
       if (!file_exists($this->srcImageName)) {
@@ -17,6 +19,7 @@ class Signia_ImageResize_Png extends Signia_ImageResize_Abstract
             $this->resizeImage(true);
          }
          imagepng($this->destImage, $this->destImageName, 9);
+
          return true;
       }
    }
